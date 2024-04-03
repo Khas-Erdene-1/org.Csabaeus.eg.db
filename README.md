@@ -19,6 +19,12 @@ biocViews: OrgDb, annotation,
 Depends: R (>= 2.7.0), methods, AnnotationDbi (>= 1.64.1)
 
 ```r
+package_url <- "https://github.com/Khas-Erdene-1/org.Csabaeus.eg.db/raw/master/org.Csabaeus.eg.db.tar.gz"
+download.file(package_url, destfile = "org.Csabaeus.eg.db.tar.gz")
+install.packages("org.Csabaeus.eg.db.tar.gz", repos = NULL, type = "source")
+```
+
+```r
 # Load required packages
 library(clusterProfiler)
 library(org.Csabaeus.eg.db)
